@@ -27,8 +27,10 @@ const connection = async () => {
 
 // app.use(cors({ credentials: true }));
 // app.use(cors({ origin: "*", credentials: true }));
-// app.use(cors({ origin: "https://testfiiveer.000webhostapp.com", credentials: true }));
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(
+  cors({ origin: "https://testfiiveer.000webhostapp.com", credentials: true })
+);
+// app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
