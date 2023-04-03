@@ -51,7 +51,7 @@ export const login = async (req, res, next) => {
 export const logout = async (req, res, next) => {
   try {
     res
-      .clearCookie("accessToken", {
+      .clearCookie("accessToke", {
         sameSite: "none",
         secure: "true",
       })
