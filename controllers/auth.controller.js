@@ -39,7 +39,7 @@ export const login = async (req, res, next) => {
       .cookie("accessToken", token, {
         httpOnly: true,
         SameSite: "None",
-        Secure,
+        Secure: true,
       })
       .status(200)
       .send(info);
